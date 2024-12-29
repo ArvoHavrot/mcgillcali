@@ -92,33 +92,46 @@ export const headerData = {
       text: 'Contact Us',
       links: [
         {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
+          text: 'Meet the Team',
           href: getPermalink('tutorials', 'category'),
         },
         {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
+          text: 'About',
+          href: getBlogPermalink(),
         },
+        {
+          text: 'FAQ',
+          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+        },
+        {
+          text: 'Social Media',
+          href: getPermalink('markdown-elements-demo-post', 'post'),
+        },
+        // {
+        //   text: 'Tag Page',
+        //   href: getPermalink('astro', 'tag'),
+        // },
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Sponsorships',
+      links: [
+        {
+          text: 'Sponsors',
+          href: getBlogPermalink(),
+        },
+        {
+          text: 'Merch',
+          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+        },
+        {
+          text: 'How to become a sponsor',
+          href: getPermalink('markdown-elements-demo-post', 'post'),
+        },
+      ],
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  //actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
@@ -181,6 +194,6 @@ export const footerData = {
   ],
   footNote: `
     <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="${getAsset('src/assets/images/calisthenicslogo.png')}" alt="Calisthenics logo" loading="lazy"></img>
-    McGill Calisthenics Club. All rights reserved.
+    McGill Calisthenics • All rights reserved.
   `,
 };

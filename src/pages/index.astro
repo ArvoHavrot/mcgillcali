@@ -12,7 +12,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Button from '~/components/ui/Button.astro';
-import { flushAllTraces } from 'next/dist/trace';
+
 
 const metadata = {
   title: 'McGill Calisthenics',
@@ -25,20 +25,23 @@ const metadata = {
 
   <Hero
     actions={[
-      {
-        variant: 'primary',
-        text: 'About Us',
-        href: '/',
-        target: '_blank',
+      // {
+      //   variant: 'primary',
+      //   text: 'About Us',
+      //   href: '/',
+      //   target: '_blank',
     
-      },
-      { text: 'Learn more', href: '#features' },
+      // },
+      // { text: 'Learn more', href: '#features' },
     ]}
     
-    image={{ src: '~/assets/images/home-group-pic.png', alt: 'Home Group Pic'
-    }}
+    image={{ src: '~/assets/images/home-group-pic.png', alt: 'Home Group Pic', class:"w-full= h-auto max-w-full opacity-0" }}
     
   >
+   <!-- Code right here not working -->
+    <div class="absolute top-4 left-4 z-50">
+      <img src="~/assets/images/calisthenicslogo.png" alt="Calisthenics Logo" class="w-16 h-16">
+    </div>
     <Fragment slot="title">
       McGill Calisthenics
     </Fragment>
@@ -49,7 +52,9 @@ const metadata = {
       >
 
     </Fragment>
-    
+    <Fragment slot="bg">
+      <div class="absolute inset-0 w-full h-full bg-[url('/src/assets/images/calisthenicslogo3.png')] bg-contain bg-center bg-no-repeat opacity-100"> </div>
+    </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
