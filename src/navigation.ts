@@ -1,29 +1,29 @@
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
-import calisthenicsLogo from '~/assets/images/calisthenicslogo.png';
+
 
 
 export const headerData = {
   links: [
     {
       text: 'Home',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
+      // links: [
+      //   {
+      //     text: 'SaaS',
+      //     href: getPermalink('/homes/saas'),
+      //   },
+      //   {
+      //     text: 'Startup',
+      //     href: getPermalink('/homes/startup'),
+      //   },
+      //   {
+      //     text: 'Mobile App',
+      //     href: getPermalink('/homes/mobile-app'),
+      //   },
+      //   {
+      //     text: 'Personal',
+      //     href: getPermalink('/homes/personal'),
+      //   },
+      // ],
     },
     {
       text: 'Pages',
@@ -179,7 +179,7 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/ArvoHavrot/mcgillcali.git' },
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src={calisthenicsLogo} alt="Calisthenics logo" loading="lazy"></img>
+    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="${getAsset('src/assets/images/calisthenicslogo.png')}" alt="Calisthenics logo" loading="lazy"></img>
     McGill Calisthenics Club. All rights reserved.
   `,
 };
