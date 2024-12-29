@@ -80,7 +80,7 @@ export default {
 
       animation: {
         fade: 'fadeInUp 1s both',
-        scroll: 'scroll 20s linear infinite', // <-- Added here
+        scroll: 'scroll 25s linear infinite', // <-- Added here
       },
 
       keyframes: {
