@@ -92,12 +92,12 @@ export const headerData = {
       text: 'Contact Us',
       links: [
         {
-          text: 'Meet the Team',
-          href: getPermalink('tutorials', 'category'),
+          text: 'About',
+          href: getPermalink('/#features'),
         },
         {
-          text: 'About',
-          href: getBlogPermalink(),
+          text: 'Meet the Team',
+          href: getPermalink('tutorials', 'category'),
         },
         {
           text: 'FAQ',

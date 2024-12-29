@@ -34,8 +34,10 @@ const metadata = {
       // },
       // { text: 'Learn more', href: '#features' },
     ]}
+        
+    image={{ src: '~/assets/images/home-group-pic2.png', alt: 'Home Group Pic', class:"w-full h-auto opacity-100 object-cover object-top -mt-[50px]" }}
     
-    image={{ src: '~/assets/images/home-group-pic.png', alt: 'Home Group Pic', class:"w-full= h-auto max-w-full opacity-0" }}
+   
     
   >
    <!-- Code right here not working -->
@@ -53,7 +55,7 @@ const metadata = {
 
     </Fragment>
     <Fragment slot="bg">
-      <div class="absolute inset-0 w-full h-full bg-[url('/src/assets/images/calisthenicslogo3.png')] bg-contain bg-center bg-no-repeat opacity-100"> </div>
+      <div class="absolute inset-0 w-full h-full bg-[url('/src/assets/images/calisthenicslogo3.png')] bg-contain bg-center bg-no-repeat opacity-0"> </div>
     </Fragment>
   </Hero>
 
@@ -65,9 +67,9 @@ const metadata = {
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline=""
+    title="About"
+    subtitle="Offering recreational calisthenics classes, an intercollegiate team and opportunities to compete abroad, McGill Calisthenics promotes a safe, high quality and fun learning environment for calisthenics! Our team represents McGill in international competitions hosted by USCCO in a range of events, while the rest of the year, we offer group calisthenics classes for ALL levels (beginner friendly)! With a focus on ensuring high quality coaching, our coaches include international calisthenics athletes and certified calisthenics PTs who are readily available to help at all times!   "
     items={[
       // {
       //   title: 'Astro + Tailwind CSS Integration',
@@ -107,11 +109,92 @@ const metadata = {
       // },
     ]}
     >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-[url('/src/assets/images/home-group-pic.png')]"> </div>
-    </Fragment>
+    
 
   </Features>
+
+  <div class="overflow-hidden whitespace-nowrap">
+    <!-- Scrolling Container -->
+    <div class="flex animate-scroll space-x-8 min-w-[200%]">
+      <!-- Duplicate Content for Seamless Loop -->
+      <div class="flex items-center space-x-8">
+        <img src="src/assets/images/scroll1.png" alt="Logo 1" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll2.png" alt="Logo 2" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll3.png" alt="Logo 3" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll4.png" alt="Logo 4" class="w-80 h-80 object-cover object-top">
+      </div>
+      <div class="flex items-center space-x-8">
+        <img src="src/assets/images/scroll1.png" alt="Logo 1" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll2.png" alt="Logo 2" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll3.png" alt="Logo 3" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll4.png" alt="Logo 4" class="w-80 h-80 object-cover object-top">
+      </div>
+      
+    </div>
+  </div>
+  
+  
+
+  
+<!-- Features2 Widget ************** -->
+
+<Features2
+title="Meet the Team"
+subtitle="Meet our team of McGill executives & coaches!"
+tagline=""
+items={[
+  {
+    title: 'Noah Havrot-Landry',
+    description: "President, Founder & Coach",
+    icon: 'flat-color-icons:template',
+  },
+  {
+    title: 'Alek Tanev',
+    description:
+      "Vice-President External, Founder & Coach",
+    icon: 'flat-color-icons:gallery',
+  },
+  {
+    title: 'Nicola Guerguinov',
+    description:
+      'Vice-President Internal',
+    icon: 'flat-color-icons:approval',
+  },
+  {
+    title: 'David Sandulescu',
+    description:
+      "Vice-President Finance",
+    icon: 'flat-color-icons:document',
+  },
+  {
+    title: 'Hassan-Khalid Zakaryaa',
+    description:
+      'Vice-President Operations and Logistics',
+    icon: 'flat-color-icons:advertising',
+  },
+  {
+    title: 'Natalia Lucena',
+    description: 'Vice-President Communications',
+    icon: 'flat-color-icons:currency-exchange',
+  },
+  {
+    title: 'David Maksimov',
+    description: 'Intercollegiate Coach',
+    icon: 'flat-color-icons:voice-presentation',
+  },
+  {
+    title: 'William Ouellet',
+    description:
+      'Intercollegiate Coach',
+    icon: 'flat-color-icons:business-contact',
+  },
+
+]}
+>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Features2>
 
   <!-- Content Widget **************** -->
 
@@ -247,69 +330,7 @@ const metadata = {
     }}
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
+  
 
   <!-- HighlightedPosts Widget ******* -->
 
