@@ -6,6 +6,7 @@ export const headerData = {
   links: [
     {
       text: 'Home',
+      href: getPermalink('/')
       // links: [
       //   {
       //     text: 'SaaS',
@@ -26,7 +27,7 @@ export const headerData = {
       // ],
     },
     {
-      text: 'Pages',
+      text: 'How to Join',
       links: [
         {
           text: 'Features (Anchor Link)',
@@ -59,18 +60,18 @@ export const headerData = {
       ],
     },
     {
-      text: 'Landing',
+      text: 'Events & Competitions',
       links: [
         {
-          text: 'Lead Generation',
+          text: 'Recreational Fitness',
           href: getPermalink('/landing/lead-generation'),
         },
         {
-          text: 'Long-form Sales',
+          text: 'Team Practices',
           href: getPermalink('/landing/sales'),
         },
         {
-          text: 'Click-Through',
+          text: 'Competitions',
           href: getPermalink('/landing/click-through'),
         },
         {
@@ -88,7 +89,7 @@ export const headerData = {
       ],
     },
     {
-      text: 'Blog',
+      text: 'Contact Us',
       links: [
         {
           text: 'Blog List',
@@ -172,8 +173,8 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/mcgillcalisthenics/' },
+    { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: 'https://chat.whatsapp.com/LooJj9ridYE6DZN5rSLXFo' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/ArvoHavrot/mcgillcali.git' },
