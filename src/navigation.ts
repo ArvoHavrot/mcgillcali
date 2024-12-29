@@ -30,40 +30,40 @@ export const headerData = {
       text: 'How to Join',
       links: [
         {
-          text: 'Features (Anchor Link)',
+          text: 'Recreational Classes',
           href: getPermalink('/#features'),
         },
         {
-          text: 'Services',
+          text: 'Intercollegiate Team',
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: 'Club Executive Team',
           href: getPermalink('/pricing'),
         },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
+        // {
+        //   text: 'About us',
+        //   href: getPermalink('/about'),
+        // },
+        // {
+        //   text: 'Contact',
+        //   href: getPermalink('/contact'),
+        // },
+        // {
+        //   text: 'Terms',
+        //   href: getPermalink('/terms'),
+        // },
+        // {
+        //   text: 'Privacy policy',
+        //   href: getPermalink('/privacy'),
+        // },
       ],
     },
     {
       text: 'Events & Competitions',
       links: [
         {
-          text: 'Recreational Fitness',
+          text: 'Recreational Classes',
           href: getPermalink('/landing/lead-generation'),
         },
         {
@@ -74,18 +74,18 @@ export const headerData = {
           text: 'Competitions',
           href: getPermalink('/landing/click-through'),
         },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
+        // {
+        //   text: 'Product Details (or Services)',
+        //   href: getPermalink('/landing/product'),
+        // },
+        // {
+        //   text: 'Coming Soon or Pre-Launch',
+        //   href: getPermalink('/landing/pre-launch'),
+        // },
+        // {
+        //   text: 'Subscription',
+        //   href: getPermalink('/landing/subscription'),
+        // },
       ],
     },
     {
