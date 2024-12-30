@@ -24,6 +24,8 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
+    
+
     actions={[
       // {
       //   variant: 'primary',
@@ -40,11 +42,14 @@ const metadata = {
    
     
   >
-   <!-- Code right here not working -->
-    <div class="absolute top-4 left-4 z-50">
-      <img src="~/assets/images/calisthenicslogo.png" alt="Calisthenics Logo" class="w-16 h-16">
-    </div>
+  
+
     <Fragment slot="title">
+      <img 
+      src="/src/assets/images/calisthenicslogo.png" 
+      alt="Calisthenics Logo" 
+      class="w-24 h-auto mx-auto mb-4"
+    />
       McGill Calisthenics
     </Fragment>
 
@@ -54,9 +59,9 @@ const metadata = {
       >
 
     </Fragment>
-    <Fragment slot="bg">
+    <!-- <Fragment slot="bg">
       <div class="absolute inset-0 w-full h-full bg-[url('/src/assets/images/calisthenicslogo3.png')] bg-contain bg-center bg-no-repeat opacity-0"> </div>
-    </Fragment>
+    </Fragment> -->
   </Hero>
 
   <!-- Note Widget ******************* -->
@@ -64,12 +69,12 @@ const metadata = {
   <Note />
 
   <!-- Features Widget *************** -->
-
+  <div class="flex justify-center items-center min-h-screen">
   <Features
     id="features"
     tagline=""
     title="About Us"
-    subtitle="Offering recreational calisthenics classes, an intercollegiate team and opportunities to compete abroad, McGill Calisthenics promotes a safe, high quality and fun learning environment for calisthenics! Our team represents McGill in international competitions hosted by USCCO in a range of events, while the rest of the year, we offer group calisthenics classes for ALL levels (beginner friendly)! With a focus on ensuring high quality coaching, our coaches include international calisthenics athletes and certified calisthenics personal trainers, who are readily available to help!   "
+    subtitle="Offering weekly calisthenics classes, an intercollegiate team and opportunities to compete abroad, McGill Calisthenics promotes a safe, high quality and fun learning environment for calisthenics! Our team represents McGill in international competitions hosted by USCCO in a range of events, while the rest of the year, we offer group calisthenics classes for ALL levels (beginner friendly)! With a focus on ensuring high quality coaching, our coaches include international calisthenics athletes and certified calisthenics personal trainers, who are readily available to help!   "
     
     items={[
       {
@@ -78,7 +83,7 @@ const metadata = {
         <div class="flex justify-center gap-4 mt-4">
           <!-- Button 1 -->
           <a 
-            href="https://example.com/join" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd5T0OMTWnBxIo8WqaZ-pJLxklhQKtw0ZNljD5lD8yJ3_N5gA/viewform?usp=sf_link" 
             target="_blank"
             class="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition"
           >
@@ -143,7 +148,7 @@ const metadata = {
     
 
   </Features>
-
+  </div>
 
 
 
@@ -173,6 +178,7 @@ const metadata = {
 <!-- Features2 Widget ************** -->
 
 <Features2
+id="features2"
 title="Meet the Team"
 subtitle="Meet our team of McGill executives & coaches!"
 tagline=""
@@ -236,6 +242,7 @@ items={[
   <Content
     isReversed
     tagline=""
+    id="FAQ"
     title="FAQs"
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',

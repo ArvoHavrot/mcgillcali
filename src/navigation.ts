@@ -30,16 +30,16 @@ export const headerData = {
       text: 'How to Join',
       links: [
         {
-          text: 'Recreational Classes',
-          href: getPermalink('/#features'),
+          text: 'Club Membership',
+          href: getPermalink('/recreationaljoin'),
         },
         {
           text: 'Intercollegiate Team',
-          href: getPermalink('/services'),
+          href: getPermalink('/intercollegiatejoin'),
         },
         {
-          text: 'Club Executive Team',
-          href: getPermalink('/pricing'),
+          text: 'Executive Team',
+          href: getPermalink('/executivejoin'),
         },
         // {
         //   text: 'About us',
@@ -63,16 +63,16 @@ export const headerData = {
       text: 'Events & Competitions',
       links: [
         {
-          text: 'Recreational Classes',
-          href: getPermalink('/landing/lead-generation'),
+          text: 'Calisthenics Classes',
+          href: getPermalink('/eventscompetitions/lead-generation'),
         },
         {
           text: 'Team Practices',
-          href: getPermalink('/landing/sales'),
+          href: getPermalink('/eventscompetitions/recreational'),
         },
         {
           text: 'Competitions',
-          href: getPermalink('/landing/click-through'),
+          href: getPermalink('/eventscompetitions/click-through'),
         },
         // {
         //   text: 'Product Details (or Services)',
@@ -97,7 +97,7 @@ export const headerData = {
         },
         {
           text: 'Meet the Team',
-          href: getPermalink('tutorials', 'category'),
+          href: getPermalink('/#features2'),
         },
         {
           text: 'FAQ',
