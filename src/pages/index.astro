@@ -68,9 +68,34 @@ const metadata = {
   <Features
     id="features"
     tagline=""
-    title="About"
-    subtitle="Offering recreational calisthenics classes, an intercollegiate team and opportunities to compete abroad, McGill Calisthenics promotes a safe, high quality and fun learning environment for calisthenics! Our team represents McGill in international competitions hosted by USCCO in a range of events, while the rest of the year, we offer group calisthenics classes for ALL levels (beginner friendly)! With a focus on ensuring high quality coaching, our coaches include international calisthenics athletes and certified calisthenics PTs who are readily available to help at all times!   "
+    title="About Us"
+    subtitle="Offering recreational calisthenics classes, an intercollegiate team and opportunities to compete abroad, McGill Calisthenics promotes a safe, high quality and fun learning environment for calisthenics! Our team represents McGill in international competitions hosted by USCCO in a range of events, while the rest of the year, we offer group calisthenics classes for ALL levels (beginner friendly)! With a focus on ensuring high quality coaching, our coaches include international calisthenics athletes and certified calisthenics personal trainers, who are readily available to help!   "
+    
     items={[
+      {
+      title: '', // No title
+      description: `
+        <div class="flex justify-center gap-4 mt-4">
+          <!-- Button 1 -->
+          <a 
+            href="https://example.com/join" 
+            target="_blank"
+            class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
+          >
+            Join Us
+          </a>
+          <!-- Button 2 -->
+          <a 
+            href="https://example.com/contact" 
+            target="_blank"
+            class="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition"
+          >
+            Contact Us
+          </a>
+        </div>
+      `,
+    },
+  
       // {
       //   title: 'Astro + Tailwind CSS Integration',
       //   description:
@@ -108,10 +133,19 @@ const metadata = {
       //   icon: 'tabler:bulb',
       // },
     ]}
+
+
     >
     
 
+
+    
+    
+
   </Features>
+
+
+
 
   <div class="overflow-hidden whitespace-nowrap">
     <!-- Scrolling Container -->
