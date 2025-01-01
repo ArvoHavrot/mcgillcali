@@ -28,31 +28,38 @@ const metadata = {
 
     <Fragment slot="subtitle">
       McGill Calisthenics offers a club membership package (free)! After filling the form below, you will be an official member of the club! You'll be able to attend any recreational calisthenics class (time and location of classes vary and are on social media)! 
-    <br> <br>
-    <Button 
-      variant="primary" 
-      href="https://docs.google.com/forms/d/e/1FAIpQLSd5T0OMTWnBxIo8WqaZ-pJLxklhQKtw0ZNljD5lD8yJ3_N5gA/viewform?usp=sf_link" 
-      target="_blank"
-      class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3  transition rounded-lg"    >
-      Join Club
-    </Button>
+    <br> 
+
+    <div class="text-center">
+      
+      <div class="flex justify-center mt-4">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd5T0OMTWnBxIo8WqaZ-pJLxklhQKtw0ZNljD5lD8yJ3_N5gA/viewform?usp=sf_link"
+          target="_blank"
+          class="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full transition duration-300"
+        >
+          Join Club
+        </a>
+      </div>
+    </div>
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
-    title="Statistics about us"
-    stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
-    ]}
-  />
+  
+    <Stats
+      title="Statistics about the Club"
+      stats={[
+        { title: 'Club Members', amount: '110' },
+        { title: 'Peak Attendance for one class', amount: '35' },
+        { title: 'Competitions', amount: '2' },
+      ]}
+    />
+
 
   <!-- Features3 Widget ************** -->
-
+<!-- 
   <Features3
     title="Our templates"
     subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
@@ -78,11 +85,11 @@ const metadata = {
         icon: 'tabler:template',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
+  <!-- <Features3
     columns={3}
     isAfterContent={true}
     items={[
@@ -127,11 +134,11 @@ const metadata = {
       src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
       alt: 'Colorful Image',
     }}
-  />
+  /> -->
 
   <!-- Steps2 Widget ****************** -->
 
-  <Steps2
+  <!-- <Steps2
     title="Our values"
     subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
     items={[
@@ -151,11 +158,11 @@ const metadata = {
           'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
       },
     ]}
-  />
+  /> -->
 
   <!-- Steps2 Widget ****************** -->
 
-  <Steps2
+  <!-- <Steps2
     title="Achievements"
     subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
     isReversed={true}
@@ -182,11 +189,11 @@ const metadata = {
         icon: 'tabler:award',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Our locations"
     tagline="Find us"
     columns={4}
@@ -208,11 +215,11 @@ const metadata = {
         description: '3456 Lorem Ipsum St, 34567, São Paulo',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Technical Support"
     tagline="Contact us"
     columns={2}
@@ -230,5 +237,5 @@ const metadata = {
         icon: 'tabler:headset',
       },
     ]}
-  />
+  /> -->
 </Layout>

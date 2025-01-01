@@ -1,0 +1,68 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+
+const metadata = {
+  title: 'Lead Generation Landing Page Demo',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline=""
+    title="Calisthenics Classes"
+    subtitle="Our weekly calisthenics classes are inclusive for all! Specially designed to accomodate for all levels, our classes are divided into three groups (beginner, intermediate and advanced), each one focusing on a skill and competing in challenges with eachother. Our Club ensures to challenge each of its members accordingly and provide a performance improvement for all."
+  />
+
+  <div class="overflow-hidden whitespace-nowrap">
+    <!-- Scrolling Container -->
+    <div class="flex animate-scroll space-x-8 min-w-[200%]">
+      <!-- Duplicate Content for Seamless Loop -->
+      <div class="flex items-center space-x-8">
+        <img src="src/assets/images/scroll1.png" alt="Logo 1" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll2.png" alt="Logo 2" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll3.png" alt="Logo 3" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll4.png" alt="Logo 4" class="w-80 h-80 object-cover object-top">
+      </div>
+      <div class="flex items-center space-x-8">
+        <img src="src/assets/images/scroll1.png" alt="Logo 1" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll2.png" alt="Logo 2" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll3.png" alt="Logo 3" class="w-80 h-80 object-cover object-top">
+        <img src="src/assets/images/scroll4.png" alt="Logo 4" class="w-80 h-80 object-cover object-top">
+      </div>
+      
+    </div>
+  </div>
+
+  <Hero2
+    tagline=""
+    title="About Classes"
+    subtitle="Our classes focus on one skill per class per group. We are always open for suggestions on new skills to teach and provide workshops on!! Following the skillset period, we transition to a workout period, where each group will go through a set of circuits."
+    actions={[
+      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+      { text: 'Learn more', href: '#' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1621452773781-0f992fd1f5cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1626&q=80',
+      alt: 'Children telling a story. Long-form Sales Landing Page demo',
+    }}
+  />
+
+  <CallToAction
+    title="Coming soon"
+    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Download Template',
+        href: 'https://github.com/onwidget/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  />
+</Layout>

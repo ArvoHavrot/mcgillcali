@@ -64,7 +64,7 @@ export const headerData = {
       links: [
         {
           text: 'Calisthenics Classes',
-          href: getPermalink('/eventscompetitions/lead-generation'),
+          href: getPermalink('/caliclasses'),
         },
         {
           text: 'Team Practices',
@@ -74,10 +74,10 @@ export const headerData = {
           text: 'Competitions',
           href: getPermalink('/eventscompetitions/click-through'),
         },
-        // {
-        //   text: 'Product Details (or Services)',
-        //   href: getPermalink('/landing/product'),
-        // },
+        {
+          text: 'Social Events',
+          href: getPermalink('/eventscompetitions/product'),
+        },
         // {
         //   text: 'Coming Soon or Pre-Launch',
         //   href: getPermalink('/landing/pre-launch'),

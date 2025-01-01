@@ -5,6 +5,8 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import Button from '~/components/ui/Button.astro';
+
 
 const metadata = {
   title: 'Services',
@@ -18,144 +20,57 @@ const metadata = {
     tagline=""
     title="McGill's Intercollegiate Calisthenics Team"
     subtitle={`Are you ready to take on competitive calisthenics? If so, this is for you! Once you've gotten your Club Membership, you'll be able to join McGill's Intercollegiate Calisthenics Team by clicking the button at the bottom of the page. But first, make sure you know what you're getting yourself into... <a href="#requirements" class="text-blue-600 underline hover:text-blue-800">Read team requirements below</a>.`}
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
+    
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
+      src: '~/assets/images/intercollegiateteamjoin.png',
+    alt: 'AstroWind Hero Image',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
-    columns={3}
-    items={[
-      {
-        title: 'Educational',
-        description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Interior Design',
-        description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
-      },
-      {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
-        description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
-      },
-      {
-        title: 'Blog',
-        description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
-      },
-      {
-        title: 'Business',
-        description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
-      },
-    ]}
+    id="requirements"
+    title="About the Team"
+    subtitle="At McGill, our team's focus is to discipline, ... and challenge our athletes to rise to the occasion. While it is important to be passionate about competing, we layout what benefits you will get and what responsibilities you will have from joining the team."
   />
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    items={[
-      {
-        title: 'High-Quality Designs',
-        description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
-      },
-      {
-        title: 'Customization Tools',
-        description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Pre-Designed Elements',
-        description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
-      },
-      {
-        title: 'Preview and Mockup Views',
-        description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
-    </Fragment>
-  </Content>
-
+  
   <!-- Content Widget **************** -->
 
   <Content
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: "Personalized Training Programs",
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
-        icon: 'tabler:clock',
+          'Certified coaches and experienced competitive calisthenics athletes will train your team subdivision and design personalized programs to guide you towards athletic excellence!',
+        icon: 'tabler:clipboard',
       },
       {
-        title: 'Professional Appearance',
+        title: 'Intercollegiate Competition Participation',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
+          'Travel with our team to competitions within North America to face-off with other university teams.',
+        icon: 'tabler:world-pin',
+      },
+      {
+        title: 'Explore Different Team Subdivisions',
+        description:
+          'We compete in four subdivisions: Endurance, Weighted, Statics & Freestyle. Opportunities to train in different subdivisions by different coaches to master many calisthenics skills are available based off performance.',
+        icon: 'tabler:arrows-move',
+      },
+      {
+        title: 'Train Calisthenics in a Group',
+        description:
+          'Train alongside a passionate community of like-minded athletes.',
+        icon: 'tabler:users-plus',
+      },
+      {
+        title: 'Represent McGill Calisthenics as our Team Athlete',
+        description:
+          'Be the first students to represent calisthenics as a sport at McGill University.',
         icon: 'tabler:school',
       },
-      {
-        title: 'Cost-Efficiency',
-        description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
-        icon: 'tabler:coin',
-      },
-      {
-        title: 'Instant Download',
-        description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
-      },
+      
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
@@ -166,9 +81,104 @@ const metadata = {
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
     </Fragment>
   </Content>
+  <!-- items={[
+    {
+      title: 'Educational',
+      description:
+        'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
+      icon: 'tabler:school',
+    },
+    {
+      title: 'Interior Design',
+      description:
+        'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
+      icon: 'tabler:home-star',
+    },
+    {
+      title: 'Photography',
+      description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
+      icon: 'tabler:photo',
+    },
+    {
+      title: 'E-commerce',
+      description:
+        'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
+      icon: 'tabler:shopping-cart',
+    },
+    {
+      title: 'Blog',
+      description:
+        'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
+      icon: 'tabler:article',
+    },
+    {
+      title: 'Business',
+      description:
+        'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
+      icon: 'tabler:building-store',
+    },
+    {
+      title: 'Branding',
+      description:
+        'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
+      icon: 'tabler:arrow-big-up-lines',
+    },
+    {
+      title: 'Medical',
+      description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
+      icon: 'tabler:vaccine',
+    },
+    {
+      title: 'Fashion Design',
+      description:
+        'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
+      icon: 'tabler:tie',
+    },
+  ]} -->
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Bi-weekly Training Sessions',
+        description:
+          'All athletes are required to meet with their subdivision coach at least every two weeks in a group session. This is to evaluate individual performance and team improvement. ',
+        icon: 'tabler:calendar-week',
+      },
+      {
+        title: 'Dedicating Personal Time',
+        description:
+          'All athletes are required to train outside bi-weekly training sessions at least three times a week (or whatever specified by the coach), to work on your skills and performance, focusing on consistent progress. ',
+        icon: 'tabler:time-duration-60',
+      },
+      {
+        title: 'Following Designed Program',
+        description:
+          'Follow the program developed by your coach, keeping them updated on your progress, challenges, or questions, and ensuring you stay on track for progress.',
+        icon: 'tabler:presentation',
+      },
+      {
+        title: 'Representing the Team',
+        description:
+          "Represent McGill's Intercollegiate Calisthenics Team during the North American competition.",
+        icon: 'tabler:school',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/responsibilities.png',
+      alt: 'Responsibilities Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Responsibilities</h3>
+    </Fragment>
+  </Content>
+
+  
 
   <!-- Testimonials Widget *********** -->
-
+<!-- 
   <Testimonials
     title="Words from real customers"
     testimonials={[
@@ -206,19 +216,29 @@ const metadata = {
       href: 'https://github.com/onwidget/astrowind',
       icon: 'tabler:chevron-right',
     }}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
-      },
-    ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
-  />
+  <div class="text-center">
+    <h2 class="text-3xl font-bold mb-4">Apply to McGill Calisthenics Intercollegiate Team Now</h2>
+    
+    <div class="flex justify-center mt-4">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdIv1egzPe8ppcDlloM6ibqQh7WKTEiaCQvzTFdvyGjs1FApQ/viewform?usp=dialog"
+        target="_blank"
+        class="px-8 py-4 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-full transition duration-300"
+      >
+        Join Team
+      </a>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
 </Layout>
